@@ -1,0 +1,1 @@
+execute as @a[scores={alphbounBTYPE=1..}] if score @s alphbounBDUE < .MOMENT alphutilTEMP run function alphappy:bounty/expire_bounty

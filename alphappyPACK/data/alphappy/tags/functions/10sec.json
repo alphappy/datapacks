@@ -1,1 +1,1 @@
-{"values": ["alphappy:util/reset_10sec"]}
+{"values": ["alphappy:util/reset_10sec","alphappy:util/compute_moment","alphappy:bounty/check_expiry"]}
