@@ -1,1 +1,1 @@
-execute unless entity @e[tag=alphrng_] run function alphappy:rng/reboot
+execute unless score .INIT_RNG alphutilTEMP matches 1 run function alphappy:rng/reboot
