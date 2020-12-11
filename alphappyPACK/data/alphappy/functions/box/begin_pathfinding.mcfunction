@@ -2,7 +2,7 @@ scoreboard players operation .WOLVES alphbox_INTERNAL = .WOLF_COUNT alphbox_SETT
 scoreboard players operation .SHEEPS alphbox_INTERNAL = .SHEEP_COUNT alphbox_SETTINGS
 function alphappy:box/create_wolf_pathfinder
 function alphappy:box/create_sheep_pathfinder
-execute at @e[tag=alphbox_CORNER] run spreadplayers ~40 ~40 0.0 38 false @e[tag=alphbox_PATHFINDER]
+function alphappy:box/spread_pathfinders
 
 tag @e[tag=alphbox_PATHFINDER,sort=random,limit=18] add alphbox_PF01
 tag @e[tag=alphbox_PATHFINDER,sort=random,limit=16] add alphbox_PF02
@@ -34,4 +34,5 @@ tag @e[tag=alphbox_PATHFINDER,sort=random,limit=14] add alphbox_PF27
 tag @e[tag=alphbox_PATHFINDER,sort=random,limit=12] add alphbox_PF28
 
 schedule function alphappy:box/kill_pathfinders 400t
+schedule function alphappy:box/spread_pathfinders 267t
 tellraw @a [{"text":" ","color":"dark_gray"},{"text":"[alphappyBOX] ","bold":true,"color":"dark_purple"},{"text":"Begin pathfinding."}]
